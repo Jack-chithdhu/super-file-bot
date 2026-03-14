@@ -1,0 +1,128 @@
+{
+  "name": "File Sharing Bot - Enhanced",
+  "description": "Telegram File Sharing Bot with Premium, Requests, Admin Chat, and more.",
+  "keywords": ["telegram", "file", "sharing", "bot", "pyrogram"],
+  "repository": "https://github.com/Jack-chithdhu/File-Sharing-Bot",
+  "env": {
+    "TG_BOT_TOKEN": {
+      "description": "Your Bot token from @BotFather",
+      "value": "",
+      "required": true
+    },
+    "APP_ID": {
+      "description": "Your API ID from my.telegram.org",
+      "value": "",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Your API Hash from my.telegram.org",
+      "value": "",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Your Telegram user ID (owner)",
+      "value": "",
+      "required": true
+    },
+    "CHANNEL_ID": {
+      "description": "Your DB channel ID e.g. -100xxxxxxxxxx",
+      "value": "",
+      "required": true
+    },
+    "DATABASE_URL": {
+      "description": "MongoDB connection URL from MongoDB Atlas",
+      "value": "",
+      "required": true
+    },
+    "DATABASE_NAME": {
+      "description": "MongoDB database name",
+      "value": "filesharexbot",
+      "required": false
+    },
+    "FORCE_SUB_CHANNEL": {
+      "description": "Force subscribe channel ID, set 0 to disable",
+      "value": "0",
+      "required": false
+    },
+    "JOIN_REQUEST_ENABLED": {
+      "description": "Set True to use join requests instead of direct subscribe",
+      "value": "False",
+      "required": false
+    },
+    "REQUEST_CHANNEL_ID": {
+      "description": "Channel ID where movie/anime requests are posted (optional)",
+      "value": "0",
+      "required": false
+    },
+    "ADMINS": {
+      "description": "Space-separated list of admin user IDs",
+      "value": "",
+      "required": false
+    },
+    "PROTECT_CONTENT": {
+      "description": "Set True to prevent files from being forwarded",
+      "value": "False",
+      "required": false
+    },
+    "AUTO_DELETE_TIME": {
+      "description": "Seconds before auto-deleting files (0 = disabled)",
+      "value": "0",
+      "required": false
+    },
+    "AUTO_DELETE_MSG": {
+      "description": "Message shown before file is deleted. Use {time} placeholder.",
+      "value": "⏳ This file will be deleted in {time} seconds. Please save it!",
+      "required": false
+    },
+    "AUTO_DEL_SUCCESS_MSG": {
+      "description": "Message shown after file is deleted.",
+      "value": "✅ File deleted successfully. Thank you!",
+      "required": false
+    },
+    "START_MESSAGE": {
+      "description": "Custom start message. Use {first}, {last}, {mention}, {id}, {username}.",
+      "value": "",
+      "required": false
+    },
+    "START_PIC": {
+      "description": "URL of image to show on /start",
+      "value": "",
+      "required": false
+    },
+    "FORCE_SUB_MESSAGE": {
+      "description": "Message shown when force subscribe is required.",
+      "value": "",
+      "required": false
+    },
+    "CUSTOM_CAPTION": {
+      "description": "Custom caption for files. Use {filename} and {previouscaption}.",
+      "value": "",
+      "required": false
+    },
+    "PREMIUM_DURATION_DAYS": {
+      "description": "Default premium duration in days",
+      "value": "30",
+      "required": false
+    },
+    "FREE_DAILY_LIMIT": {
+      "description": "Max daily file downloads for free users",
+      "value": "20",
+      "required": false
+    },
+    "DISABLE_CHANNEL_BUTTON": {
+      "description": "Set True to disable Share URL button on channel posts",
+      "value": "False",
+      "required": false
+    },
+    "TG_BOT_WORKERS": {
+      "description": "Number of bot worker threads",
+      "value": "8",
+      "required": false
+    },
+    "PORT": {
+      "description": "Web server port",
+      "value": "8080",
+      "required": false
+    }
+  }
+}
