@@ -1,0 +1,36 @@
+name: file-sharing-bot
+
+services:
+  - name: bot
+    type: worker
+    git:
+      branch: main
+    build:
+      dockerfile: Dockerfile
+    run:
+      command: python3 main.py
+    env:
+      - key: TG_BOT_TOKEN
+        value: ""
+      - key: APP_ID
+        value: ""
+      - key: API_HASH
+        value: ""
+      - key: OWNER_ID
+        value: ""
+      - key: CHANNEL_ID
+        value: ""
+      - key: DATABASE_URL
+        value: ""
+      - key: DATABASE_NAME
+        value: "filesharexbot"
+      - key: FORCE_SUB_CHANNEL
+        value: "0"
+      - key: PORT
+        value: "8080"
+    routes:
+      - port: 8080
+        path: /
+    scaling:
+      min: 1
+      max: 1
