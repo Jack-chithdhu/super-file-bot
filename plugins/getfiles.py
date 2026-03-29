@@ -1,4 +1,4 @@
-#(©)CodeXBotz - Enhanced by Claude
+#(©)CodeXBotz - Enhanced by Claude - v2
 # GetFiles System — admin stores batch links by request ID / season / quality
 #                   users retrieve them with /getfiles <id>
 
